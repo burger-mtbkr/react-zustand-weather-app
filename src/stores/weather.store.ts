@@ -3,7 +3,7 @@ import { devtools, persist } from 'zustand/middleware';
 import loggingMiddleware from '../middleware/logging.middleware';
 import { fetchWeather } from '../api/fetchWeather.api';
 
-interface WeatherState {
+export interface WeatherState {
   temperature: number | null;
   isLoading: boolean;
   error: string | null;
